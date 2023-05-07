@@ -47,10 +47,10 @@ export function Content() {
 
     async function sendData() {
       await Axios.post(baseURL, {
-        nome: nome,
-        citacao: citacao,
+        name: nome,
+        quote: citacao,
         minibio: minibio,
-        imagem: imagem
+        image: imagem
       })
       const response = await Axios.get(baseURL)
       setRepositories(response.data)
