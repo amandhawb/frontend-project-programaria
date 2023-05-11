@@ -78,14 +78,14 @@ export function Content() {
               return(
                 <div key={repo._id} className={styles.cardRepo}>
                 <div className={styles.cardImgContainer}>
-                  <img className={styles.cardRepoImage} src={repo.imagem} />
+                  <img className={styles.cardRepoImage} src={repo.image} />
                 </div>
                 <details>
                   <summary className={styles.cardRepoSummary}>
-                    {repo.nome}
+                    {repo.name}
+                    <p className={styles.cardRepoText}>{repo.minibio}</p>
+                    <q className={styles.cardRepoQuote}>{repo.quote}</q>
                   </summary>
-                  <p className={styles.cardRepoText}>{repo.minibio}</p>
-                  <q className={styles.cardRepoQuote}>{repo.citacao}</q>
                 </details>
               </div>
               )
